@@ -33,6 +33,7 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="opencv_debug.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -62,12 +63,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="addGaussian.cpp" />
+    <ClCompile Include="dataStruct.cpp" />
+    <ClCompile Include="getFeature.cpp" />
     <ClCompile Include="initialize.cpp" />
     <ClCompile Include="mainProcess.cpp" />
+    <ClCompile Include="tracking.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="addGaussian.h" />
+    <ClInclude Include="getFeature.h" />
     <ClInclude Include="initialize.h" />
+    <ClInclude Include="dataStruct.h" />
     <ClInclude Include="mainProcess.h" />
+    <ClInclude Include="tracking.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <ExecutablePath>D:\Program Files\opencv\build\x86\vc10\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>D:\Program Files\opencv\build\include\opencv2;D:\Program Files\opencv\build\include\opencv;D:\Program Files\opencv\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Program Files\opencv\build\x86\vc10\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>opencv_calib3d246d.lib;opencv_contrib246d.lib;opencv_core246d.lib;opencv_features2d246d.lib;opencv_flann246d.lib;opencv_gpu246d.lib;opencv_highgui246d.lib;opencv_imgproc246d.lib;opencv_legacy246d.lib;opencv_ml246d.lib;opencv_objdetect246d.lib;opencv_ts246d.lib;opencv_video246d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

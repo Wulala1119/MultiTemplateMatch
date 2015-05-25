@@ -21,12 +21,36 @@
     <ClCompile Include="initialize.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="dataStruct.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="addGaussian.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="getFeature.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tracking.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="initialize.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dataStruct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="mainProcess.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="initialize.h">
+    <ClInclude Include="addGaussian.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="getFeature.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tracking.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

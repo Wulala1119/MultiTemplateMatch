@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiTemplateMatch", "MultiTemplateMatch\MultiTemplateMatch.vcxproj", "{6C66334F-1491-4634-900F-3A4AA3001DDB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcxproj", "{5A6D9178-DD31-4CA6-80A4-6B7C1383061D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{6C66334F-1491-4634-900F-3A4AA3001DDB}.Debug|Win32.Build.0 = Debug|Win32
 		{6C66334F-1491-4634-900F-3A4AA3001DDB}.Release|Win32.ActiveCfg = Release|Win32
 		{6C66334F-1491-4634-900F-3A4AA3001DDB}.Release|Win32.Build.0 = Release|Win32
+		{5A6D9178-DD31-4CA6-80A4-6B7C1383061D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5A6D9178-DD31-4CA6-80A4-6B7C1383061D}.Debug|Win32.Build.0 = Debug|Win32
+		{5A6D9178-DD31-4CA6-80A4-6B7C1383061D}.Release|Win32.ActiveCfg = Release|Win32
+		{5A6D9178-DD31-4CA6-80A4-6B7C1383061D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
