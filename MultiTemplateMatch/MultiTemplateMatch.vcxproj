@@ -64,6 +64,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="addGaussian.cpp" />
+    <ClCompile Include="calSimilarity.cpp" />
     <ClCompile Include="dataStruct.cpp" />
     <ClCompile Include="getFeature.cpp" />
     <ClCompile Include="initialize.cpp" />
@@ -72,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="addGaussian.h" />
+    <ClInclude Include="calSimilarity.h" />
     <ClInclude Include="getFeature.h" />
     <ClInclude Include="initialize.h" />
     <ClInclude Include="dataStruct.h" />

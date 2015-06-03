@@ -30,6 +30,7 @@ void initialize(Object& obj, VideoMessage& videoMessage, Mat& Frame, Point leftT
 	}
 	imshow("test", obj.templateFeature[0]);
 	cvWaitKey(0);*/
+	//char outfilename[200] = {0};
 	for(int i = 1; i < obj.templateNum; i ++)
 	{
 		//加高斯噪声
@@ -38,6 +39,8 @@ void initialize(Object& obj, VideoMessage& videoMessage, Mat& Frame, Point leftT
 		obj.templateFeature[i] = Mat(obj.templateHeight, obj.templateWidth, CV_8UC1);
 		getFeature(Frame, obj.templateFeature[i], similarMatAddGaussian);
 		/*imshow("test", obj.templateFeature[i]);
+		sprintf(outfilename,"C:\\Users\\wulala1119\\Documents\\visual studio 2012\\Projects\\MultiTemplateMatch\\template\\template_%02d.jpg",i);
+		imwrite(outfilename, obj.templateFeature[i]);
 		cvWaitKey(0);*/
 	}
 	//------------------------------初始化结束---------------------------------//

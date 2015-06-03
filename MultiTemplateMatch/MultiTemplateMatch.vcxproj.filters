@@ -33,6 +33,9 @@
     <ClCompile Include="tracking.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="calSimilarity.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="initialize.h">
@@ -51,6 +54,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="tracking.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="calSimilarity.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

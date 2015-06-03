@@ -7,6 +7,7 @@
 #include "mainProcess.h"
 #include "dataStruct.h"
 #include "initialize.h"
+#include "tracking.h"
 
 #define templateWidth 32
 #define templateHeight 32
@@ -24,7 +25,7 @@ int main()
 	//---------------------------------初始化数据结构--------------------------------//
 	Object obj;
 	cout << "1 开始测试！" << endl;
-	string fileName = "C:\\Users\\Administrator.FIEFAMB4PH5NYEX\\Documents\\visual studio 2012\\Projects\\MultiTemplateMatch\\videosrc\\CarScale.avi";
+	string fileName = "C:\\Users\\wulala1119\\Documents\\visual studio 2012\\Projects\\MultiTemplateMatch\\videosrc\\CarScale.avi";
 	VideoMessage videoMessage(fileName);
 	cout << "2 视频捕获成功！" << endl;
 	Mat nowFrame;
@@ -44,12 +45,10 @@ int main()
 	{
 		cout << "正在处理第：" << frameCount << "帧" << endl;
 		nowFrame = videoMessage.getNowFrame();
-		
-
-		tracking();
+		tracking(nowFrame, obj);
 		rectangle(nowFrame, Point(obj.x, obj.y), Point(obj.x + obj.width, obj.y + obj.height), Scalar(255,0,0));
 		imshow("VideoTrack", nowFrame);
-		waitKey(20);
+		waitKey(1);
 		cout << "第：" << frameCount << "帧处理完成" << endl;
 		frameCount ++;
 	}

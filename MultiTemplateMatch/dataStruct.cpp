@@ -14,9 +14,16 @@ void Object::calSimilarMat(Point leftTop, Point rightButtom)
 {
 	tx = leftTop.x;
 	ty = leftTop.y;
-	sx = width / (templateWidth - 1);
-	sy = height / (templateHeight - 1);
+	sx = (float)width / (float)(templateWidth - 1);
+	sy = (float)height / (float)(templateHeight - 1);
 	similarMat = (Mat_<float>(2, 3) << sx, 0, tx, 0, sy, ty);
+}
+void Object::similarityMat2Position()
+{
+	x = tx;
+	y = ty;
+	width = sx * (templateWidth - 1);
+	height = sy * (templateHeight - 1);
 }
 //-----------------------------------VideoMessage的成员函数----------------//
 VideoMessage::VideoMessage(string fileName)

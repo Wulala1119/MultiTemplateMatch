@@ -14,6 +14,7 @@ public:
 	Object();
 	void initObj();
 	void calSimilarMat(Point leftTop, Point rightButtom);
+	void similarityMat2Position();
 //private:
 	//目标
 	//目标框位置左上角坐标（x,y）
