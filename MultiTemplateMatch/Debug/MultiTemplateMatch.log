@@ -1,8 +1,10 @@
-﻿生成启动时间为 2015/6/3 15:34:18。
+﻿生成启动时间为 2015/6/9 10:56:02。
      1>项目“C:\Users\wulala1119\documents\visual studio 2012\Projects\MultiTemplateMatch\MultiTemplateMatch\MultiTemplateMatch.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt mainProcess.cpp
-         mainProcess.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt tracking.cpp
+         tracking.cpp
+     1>c:\users\wulala1119\documents\visual studio 2012\projects\multitemplatematch\multitemplatematch\tracking.cpp(75): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\wulala1119\documents\visual studio 2012\projects\multitemplatematch\multitemplatematch\tracking.cpp(77): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
        Link:
          D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\wulala1119\documents\visual studio 2012\Projects\MultiTemplateMatch\Debug\MultiTemplateMatch.exe" /INCREMENTAL /NOLOGO opencv_calib3d246d.lib opencv_contrib246d.lib opencv_core246d.lib opencv_features2d246d.lib opencv_flann246d.lib opencv_gpu246d.lib opencv_highgui246d.lib opencv_imgproc246d.lib opencv_legacy246d.lib opencv_ml246d.lib opencv_objdetect246d.lib opencv_ts246d.lib opencv_video246d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\wulala1119\documents\visual studio 2012\Projects\MultiTemplateMatch\Debug\MultiTemplateMatch.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\wulala1119\documents\visual studio 2012\Projects\MultiTemplateMatch\Debug\MultiTemplateMatch.lib" /MACHINE:X86 Debug\addGaussian.obj
          Debug\calSimilarity.obj
@@ -16,4 +18,4 @@
 
 生成成功。
 
-已用时间 00:00:01.39
+已用时间 00:00:01.10

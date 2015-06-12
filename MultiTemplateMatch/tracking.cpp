@@ -7,20 +7,21 @@ void tracking(Mat &src, Object& obj)
 	double minSimilarity = 10000;
 	int candidateShiftIndex = 0;
 	int maxSimilarityTemplateIndex = 0;
+	int minSimilarityTemplateIndex = 0;
 	Mat tempCandidateTargetMat = Mat(obj.templateHeight, obj.templateWidth, CV_8UC1);
 	vector<vector <double> > allTemplateSimilarity;
 
 	//-------------------------------------------三步搜索初始化-------------------------//
 	calShiftSimilarMat(obj.ShiftSimilarMat, obj.similarMat);
-	//namedWindow("test");
+	namedWindow("test");
 	char outfilename[200] = {0};
 	//-------------------------------------------三步搜索-------------------------------//
 	for(int i = 0; i < SHIFT_NUM; i ++)
 	{
 		getFeature(src, tempCandidateTargetMat, obj.ShiftSimilarMat[i]);
 		//imshow("test", tempCandidateTargetMat);
-		//sprintf(outfilename,"C:\\Users\\wulala1119\\Documents\\visual studio 2012\\Projects\\MultiTemplateMatch\\template\\template_%02d.jpg",i);
-		//imwrite(outfilename, obj.templateFeature[i]);
+		//sprintf(outfilename,"C:\\Users\\wulala1119\\Documents\\visual studio 2012\\Projects\\testdata\\candidate\\candidate_%02d.jpg",i);
+		//imwrite(outfilename, tempCandidateTargetMat);
 		//cvWaitKey(0);
 		for(int j = 0; j < obj.templateNum; j ++)
 		{
@@ -33,9 +34,21 @@ void tracking(Mat &src, Object& obj)
 			}
 		}
 	}
-
+	// 显示每帧目标
+	getFeature(src, tempCandidateTargetMat, obj.ShiftSimilarMat[candidateShiftIndex]);
+	imshow("test", tempCandidateTargetMat);
+	cvWaitKey(0);
 	//-------------------------------------------求与候选目标最相似度最小模板-----------//
-
+	for(int i = 0; i < obj.templateNum; i ++)
+	{
+		vector<double> similarityRes = calSimilarity(obj.templateFeature[i], tempCandidateTargetMat, NCC());
+		if(similarityRes[0] < minSimilarity)
+		{
+			minSimilarity = similarityRes[0];
+			minSimilarityTemplateIndex = i;
+		}
+	}
+	obj.templateFeature[minSimilarityTemplateIndex] = tempCandidateTargetMat.clone();
 
 	//-------------------------------------------遮挡分析-------------------------------//
 

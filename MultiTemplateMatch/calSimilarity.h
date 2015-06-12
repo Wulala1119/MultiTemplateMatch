@@ -7,4 +7,5 @@ using namespace cv;
 
 struct NCC {};
 vector<double> calSimilarity(Mat& singleTemplate, Mat& candidate, NCC);
+vector<double> calBlockSimilarity(Mat& singleTemplate, Mat& candidate, NCC);
 #endif
